@@ -1,0 +1,47 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
+
+Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Cmd+Shift+Enter*. 
+
+```{r}
+library("AnaCoDa")
+```
+
+
+```{r}
+#genome <- initializeGenomeObject(file = "../../Data/ecoli_info/NC_000913.3.fasta")
+#genome <- initializeGenomeObject(file = "../../Data/ecoli_info/NC_000913.3.CDS.fasta")
+#genome <- initializeGenomeObject(file = "../../Data/ecoli_info/tempy.fasta")
+genome <- initializeGenomeObject(file = "../../Data/tempy.fasta")
+```
+
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE, include=FALSE}
+parameter <- initializeParameterObject(genome = genome, sphi = 1, num.mixtures = 1, gene.assignment = rep(1, length(genome)))
+model <- initializeModelObject(parameter = parameter, model = "ROC")
+mcmc <- initializeMCMCObject(samples = 5000, thinning = 10, adaptive.width=50)
+runMCMC(mcmc = mcmc, genome = genome, model = model, ncores = 1)
+```
+
+
+```{r}
+phi_mat <- getExpressionEstimates(parameter = parameter, 
+                                  gene.index = 1:length(genome),
+                                  samples = 5000, genome = genome)
+head(phi_mat)
+```
+
+```{r}
+write.csv(phi_mat,"../../Data/roc_semppr_first_pass.csv", row.names = FALSE, quote=FALSE)
+```
+
+Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Cmd+Option+I*.
+
+When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Cmd+Shift+K* to preview the HTML file). 
+
+The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike *Knit*, *Preview* does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.
+

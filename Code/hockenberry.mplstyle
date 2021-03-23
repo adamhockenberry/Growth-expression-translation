@@ -1,0 +1,53 @@
+# To check more avaialble options see:
+# https://matplotlib.org/tutorials/introductory/customizing.html
+
+# matplotlib.rcParams['text.usetex'] = True
+
+# AXES
+axes.titlesize : 10
+axes.labelsize : 10
+axes.edgecolor : 0.25 #Normalized RGB colours (from 0 to 1 instead of 0 to 255)
+axes.labelcolor : (0.1,0.1,0.1)
+axes.linewidth : 1
+axes.spines.top : True
+axes.spines.right : True
+axes.spines.bottom : True
+axes.spines.left : True
+axes.axisbelow : True
+
+# GRID
+axes.grid : True
+grid.linewidth : 0.5
+grid.color : 0.8
+
+# LINES
+lines.linewidth : 1.5
+lines.markeredgewidth : 0.0
+
+# TICKS
+xtick.labelsize : 10
+xtick.color : 0 
+ytick.labelsize : 10
+ytick.color : 0 
+xtick.major.width : 1
+ytick.major.width : 1
+ytick.major.size : 5
+xtick.major.size : 5
+
+# LEGEND
+legend.fontsize : 10
+legend.handlelength : 1
+legend.handleheight : 1
+legend.handletextpad : 0.4
+
+# FONT
+font.family : sans-serif
+font.sans-serif : Helvetica
+font.weight : normal
+
+pdf.fonttype : 42
+
+# FIGURE OUTPUT 
+figure.figsize  : 3, 2.25
+figure.dpi : 150
+savefig.dpi : 200

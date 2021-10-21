@@ -1,0 +1,21 @@
+	Growth condition	Strain	Growth Rate (1/hr)	Stdev	Single cell volume [fl]1	Doubling time (h-1)	Time exp before harvest (h)	# of doublings at exponential growth before harvesting	OD @ harvesting. replicates	Unnamed: 9	Unnamed: 10	Number of Proteins Identified (FDR 1%)2	Simple_sample_id
+18	42C glucose	BW25113	0.66	0.02	2.9797320000000003	1	6	5.7	1.53	1.2	1.35	1560.0	42C glucose
+4	Acetate	BW25113	0.3	0.04	2.2953	2.3	29.3	12.7	0.53	0.22	0.48	1683.0	Acetate
+14	Fructose	BW25113	0.65	0.004	2.962575	1.1	5	4.7	0.77	0.68	0.77	1612.0	Fructose
+5	Fumarate	BW25113	0.42	0.02	2.538708	1.7	25.4	15.2	0.22	0.2	0.14	1696.0	Fumarate
+6	Galactose 	BW25113	0.26	0.003	2.2107720000000004	2.7	52.1	19.2	2.02	2.03	2.02	1650.0	Galactose 
+10	Glucosamine	BW25113	0.46	0.02	2.616452	1.5	2.4	1.6	0.53	0.8	0.45	1708.0	Glucosamine
+7	Glucose	BW25113	0.58	0.01	2.839508	1.2	22.7	19.1	0.4	0.43	0.39	1702.0	Glucose
+11	Glycerol	BW25113	0.47	0.01	2.635623	1.5	26.8	18.3	0.35	0.38	0.42	1657.0	Glycerol
+3	Glycerol + AA	BW25113	1.27	0.01	3.825863	0.5	7.5	13.8	0.5	0.51	0.5	1675.0	Glycerol + AA
+0	LB	BW25113	1.9	0.03	4.2857	0.4	5	13.7	1.8	1.37	1.34	1752.0	LB
+15	Mannose	BW25113	0.47	0.01	2.635623	1.5	24.9	16.8	0.55	0.71	0.86	1643.0	Mannose
+17	Osmotic-stress glucose	BW25113	0.55	0.01	2.785175	1.3	15.4	12.2	2.38	2.29	2.34	1558.0	Osmotic-stress glucose
+12	Pyruvate	BW25113	0.4	0.01	2.4992	1.7	25.2	14.4	0.4	0.45	0.37	1688.0	Pyruvate
+13	Succinate	BW25113	0.44	0.003	2.577792	1.6	24.4	15.4	1.0	0.34	0.25	1678.0	Succinate
+16	Xylose	BW25113	0.55	0.01	2.785175	1.3	18	14.3	1.37	1.97	1.59	1610.0	Xylose
+22	Chemostat u=0.12	BW25113	0.12	0.0	1.9015680000000001	5.7749999999999995	after >6 volume changes	after >6 volume changes	0.88	0.88	0.875	1701.0	Chemostat u=0.12
+23	Chemostat u=0.20	BW25113	0.2	0.0	2.0808	3.4649999999999994	after >6 volume changes	after >6 volume changes	0.96	0.96	0.94	1737.0	Chemostat u=0.20
+24	Chemostat u=0.35	BW25113	0.35	0.0	2.398575	1.98	after >6 volume changes	after >6 volume changes	0.955	0.955	1.02	1725.0	Chemostat u=0.35
+25	Chemostat u=0.5	BW25113	0.5	0.0	2.6925	1.386	after >6 volume changes	after >6 volume changes	1.005	1.005	0.98	1698.0	Chemostat u=0.5
+19	pH6 glucose	BW25113	0.63	0.005	2.9279430000000004	1.1	16.3	14.9	1.47	1.48	1.53	1534.0	pH6 glucose
